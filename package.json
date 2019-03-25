@@ -1,0 +1,16 @@
+{
+  "name": "responsive-navigation-bar",
+  "version": "1.0.0",
+  "description": "Horizontal navigation bar that provides next and previous paddles when items overflow container and the user is not on a touch enabled device. Click the side panel to automatically scroll to the next set of items. Code is based off of the HTML so it should be easy to use with dynamic lists. I use the Intersection Observer to detect which menu items are currently visible and calculate how far the list should scroll. ",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}
