@@ -139,23 +139,18 @@ if (!touchDevice) {
 	function updatePaddles() {
 		// If navItems scrollLeft is 0 don't show the left paddle
 		// If navItems scrollLeft equals scrollWidth don't show the right paddle
-		console.log('itemsWidth', itemsWidth, 'width', width);
 		if (width < itemsWidth) {
 			// Enable
 			if (navItems.scrollLeft !== 0) {
 				hideShowRafCall(false, startOfList);
-				console.log('false, left');
 			}
 			if (navItems.scrollLeft !== navItems.scrollWidth) {
 				hideShowRafCall(false, endOfList);
-				console.log('false, right');
 			}
 		} else {
 			// Disable left and right paddles
 			hideShowRafCall(true, startOfList);
-			console.log('true, left');
 			hideShowRafCall(true, endOfList);
-			console.log('true, right');
 		}
 	}
 	// Add aria-hidden attributes to hide/show functions
